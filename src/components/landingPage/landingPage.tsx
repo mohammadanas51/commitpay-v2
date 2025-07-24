@@ -1,10 +1,14 @@
 import React from 'react'
 import Header from './header'
+import NavBar from './NavBar'
 
 function LandingPage() {
   return (
-    <Header/>
-  )
+    <>
+      <NavBar />
+      <Header />
+    </>
+  );
 }
 
 export default LandingPage
