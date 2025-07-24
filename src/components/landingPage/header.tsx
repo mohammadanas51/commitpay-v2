@@ -11,7 +11,7 @@ function Header() {
         <h1 className={poppins.className}>
           CommitPay - Find your first paid Open Source Issue
         </h1>
-        
+        <p></p>
       </div>
     </div>
   );
