@@ -1,10 +1,18 @@
+"use client" ;
 import React from "react";
 import { Poppins } from "next/font/google";
+// import { Source_Code_Pro } from "next/font/google";
+import { motion } from "framer-motion"
+
 
 const poppins = Poppins({
   weight: ["400","600"],
   subsets: ["latin"],
 });
+// const sourceCode = Source_Code_Pro({
+//   weight: ["400","600"],
+//   subsets: ["latin"],
+// });
 
 function Header() {
   return (
@@ -13,9 +21,15 @@ function Header() {
         <h1 className={`text-5xl ${poppins.className} font-semibold`}>
           CommitPay - Find your first paid Open Source Issue
         </h1>
-        <h2 className={`mt-7 text-2xl ${poppins.className} font-normal`}>
+        
+        <motion.h3
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+          className="mt-7 text-2xl ${poppins.className} font-normal"
+        >  
           First Open Source Contribution? Make It Count (and Make Some Money).
-        </h2>
+        </motion.h3>
       </div>
     </div>
   );
