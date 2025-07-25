@@ -19,14 +19,14 @@ function Header() {
     <div>
       <div className="text-center mt-10">
         <h1 className={`text-5xl ${poppins.className} font-semibold`}>
-          CommitPay - Find your first paid Open Source Issue
+          Find your first paid Open Source Issue
         </h1>
         
         <motion.h3
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="mt-7 text-2xl ${poppins.className} font-normal"
+          className="mt-7 text-lg ${poppins.className} font-normal md:text-2xl"
         >  
           First Open Source Contribution? Make It Count (and Make Some Money).
         </motion.h3>
