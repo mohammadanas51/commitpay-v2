@@ -3,6 +3,7 @@ import Header from './Header'
 import NavBar from './NavBar'
 import CtaButtons from './CtaButtons';
 import HowItWorks from './HowItWorks';
+import ContributorBenefits from './ContributorBenefits';
 
 function LandingPage() {
   return (
@@ -11,6 +12,7 @@ function LandingPage() {
       <Header />
       <CtaButtons/>
       <HowItWorks />
+      <ContributorBenefits />
     </>
   );
 }
