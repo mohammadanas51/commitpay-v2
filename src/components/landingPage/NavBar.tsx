@@ -1,7 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react"; // You can use any icon library
+import { Menu, X } from "lucide-react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["400","600"],
+  subsets: ["latin"],
+});
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +17,7 @@ function NavBar() {
   const navItems = ["Home", "How it works", "Contributors", "Maintainers", "Pricing", "Contact"];
 
   return (
-    <nav className="bg-blue-800 text-white px-4 py-3">
+    <nav className={`bg-blue-800 text-white px-4 py-3 ${poppins.className}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-xl font-bold tracking-wider">CommitPay</div>
 
