@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CommitPay – Find Paid Open Source Issues",
   description: "CommitPay helps beginner developers find beginner-friendly paid open source issues. Start contributing, get paid, and grow your skills.",
+   icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 
