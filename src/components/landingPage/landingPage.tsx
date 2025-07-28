@@ -5,6 +5,7 @@ import CtaButtons from './CtaButtons';
 import HowItWorks from './HowItWorks';
 import ContributorBenefits from './ContributorBenefits';
 import MaintainerBenefits from './MaintainerBenefits';
+import Pricing from './Pricing';
 
 function LandingPage() {
   return (
@@ -15,6 +16,7 @@ function LandingPage() {
       <HowItWorks />
       <ContributorBenefits />
       <MaintainerBenefits/>
+      <Pricing/>
     </>
   );
 }
