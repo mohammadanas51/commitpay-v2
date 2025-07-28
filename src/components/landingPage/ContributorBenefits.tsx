@@ -8,16 +8,6 @@ const poppins = Poppins({
 });
 function ContributorBenefits() {
   return (
-    // <div classNameName={` ${poppins.classNameName} `}>
-    //   <div classNameName={`text-3xl text-center mt-24 font-semibold`}>
-    //     Contributors
-    //   </div>
-    //   <ul classNameName="mt-2 list-disc list-inside space-y-2 font-body text-center">
-    //     <li>Get Paid for Open Source.</li>
-    //     <li> Learn by Doing</li>
-    //     <li> Collaborate with Maintainers</li>
-    //   </ul>
-    // </div>
 
     <div className={`text-center ${poppins.className}`}>
       <div className={`text-3xl mt-24 font-semibold`}>
@@ -56,11 +46,11 @@ function ContributorBenefits() {
           </span>
 
           <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-            For Developers
+            Monetize your contributions
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
             {" "}
-            Prototype ideas online, without depending on your local environment.
+            Turn your open-source contributions into sustainable income. Get rewarded every time your code helps a project move forward.
           </p>
         </div>
 
@@ -84,12 +74,11 @@ function ContributorBenefits() {
             </div>
           </span>
           <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-            Content creators
+            Grow your developer reputation
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
             {" "}
-            Deliver high-quality, engaging blogs, articles, and video tutorials
-            to your audience.
+            Showcase your contributions on a verified profile. Build trust with maintainers and attract more collaboration opportunities.
           </p>
         </div>
 
@@ -116,12 +105,11 @@ function ContributorBenefits() {
           </span>
 
           <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-            Educators teaching PHP{" "}
+            Discover paid issues{" "}
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
             {" "}
-            Easily create and share coding assignments and projects with your
-            students
+            Browse and claim bountied issues from popular open-source projects. No more unpaid bug fixes — earn while you build.
           </p>
         </div>
 
@@ -146,11 +134,10 @@ function ContributorBenefits() {
             </div>
           </span>
           <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-            Open source maintainers{" "}
+            Instant payouts, no middlemen{" "}
           </h2>
           <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
-            For issue reproduction while letting your users try your work
-            without installing it
+            CommitPay offers secure, direct payments with clear terms. No haggling, no delays — just clean, trackable compensation for your work.
           </p>
         </div>
       </div>
