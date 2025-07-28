@@ -7,6 +7,7 @@ const poppins = Poppins({
   weight: ["400", "600"],
   subsets: ["latin"],
 });
+
 function Pricing() {
   return (
     <motion.div
@@ -15,7 +16,8 @@ function Pricing() {
       transition={{ duration: 1.5 }}
       className={`text-center ${poppins.className}`}
     >
-      <div className={`text-3xl mt-24 font-semibold`}>Pricing</div>
+      <div className={`text-3xl mt-24 font-semibold `}>Pricing</div>
+      
       <div className="flex justify-center">
         <div className="flex flex-col rounded-lg bg-slate-800 shadow-sm max-w-96 p-8 my-6 border border-slate-600">
           <div className="pb-8 m-0 mb-8 text-center text-slate-100 border-b border-slate-600">
