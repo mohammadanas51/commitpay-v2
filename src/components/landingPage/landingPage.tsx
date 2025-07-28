@@ -6,6 +6,7 @@ import HowItWorks from './HowItWorks';
 import ContributorBenefits from './ContributorBenefits';
 import MaintainerBenefits from './MaintainerBenefits';
 import Pricing from './Pricing';
+import Contact from './Contact'
 
 function LandingPage() {
   return (
@@ -17,6 +18,7 @@ function LandingPage() {
       <ContributorBenefits />
       <MaintainerBenefits/>
       <Pricing/>
+      <Contact/>
     </>
   );
 }
