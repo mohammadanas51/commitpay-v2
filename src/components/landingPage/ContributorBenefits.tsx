@@ -19,7 +19,7 @@ function ContributorBenefits() {
     //   </ul>
     // </div>
 
-    <div className="text-center">
+    <div className={`text-center ${poppins.className}`}>
       <div className={`text-3xl mt-24 font-semibold`}>
         Contributors
       </div>
