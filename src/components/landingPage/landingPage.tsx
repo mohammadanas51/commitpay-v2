@@ -11,14 +11,31 @@ import Contact from './Contact'
 function LandingPage() {
   return (
     <>
-      <NavBar />
-      <Header />
-      <CtaButtons/>
-      <HowItWorks />
-      <ContributorBenefits />
-      <MaintainerBenefits/>
-      <Pricing/>
-      <Contact/>
+     <NavBar />
+      <section id="home">
+        <Header />
+        <CtaButtons />
+      </section>
+
+      <section id="how-it-works">
+        <HowItWorks />
+      </section>
+
+      <section id="contributors">
+        <ContributorBenefits />
+      </section>
+
+      <section id="maintainers">
+        <MaintainerBenefits />
+      </section>
+
+      <section id="pricing">
+        <Pricing />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }

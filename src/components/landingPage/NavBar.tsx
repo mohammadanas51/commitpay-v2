@@ -14,7 +14,14 @@ function NavBar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const navItems = ["Home", "How it works", "Contributors", "Maintainers", "Pricing", "Contact"];
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "How it works", href: "#how-it-works" },
+  { label: "Contributors", href: "#contributors" },
+  { label: "Maintainers", href: "#maintainers" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Contact", href: "#contact" },
+];
 
   return (
     <nav className={`bg-blue-800 text-white px-4 py-3 ${poppins.className}`}>
@@ -25,7 +32,7 @@ function NavBar() {
         <ul className="hidden md:flex gap-8 font-medium">
           {navItems.map((item, index) => (
             <li key={index} className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">
-              {item}
+              <a href={item.href}>{item.label}</a>
             </li>
           ))}
         </ul>
@@ -50,7 +57,7 @@ function NavBar() {
         >
           {navItems.map((item, index) => (
             <li key={index} className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">
-              {item}
+             <a href={item.href}>{item.label}</a>
             </li>
           ))}
         </motion.ul>
