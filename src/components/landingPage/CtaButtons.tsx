@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Poppins } from "next/font/google";
-import { motion } from "framer-motion";
 const poppins = Poppins({
   weight: ["400", "600"],
   subsets: ["latin"],
