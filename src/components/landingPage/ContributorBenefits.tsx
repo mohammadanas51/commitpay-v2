@@ -1,14 +1,16 @@
 "use client";
 import React from "react";
 import { Poppins } from "next/font/google";
-
+import { motion } from "framer-motion"
 const poppins = Poppins({
   weight: ["400", "600"],
   subsets: ["latin"],
 });
 function ContributorBenefits() {
   return (
-    <div className={`text-center ${poppins.className}`}>
+    <motion.div initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }} className={`text-center ${poppins.className}`}>
       <div className={`text-3xl mt-24 font-semibold`}>Contributors</div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  p-10 ">
@@ -132,7 +134,7 @@ function ContributorBenefits() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
